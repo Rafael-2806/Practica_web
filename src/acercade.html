@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quién Soy</title>
+    <style>
+        /* Estilos para la imagen y el contenedor */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-image {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: url('ruta/de/tu/foto.jpg'); /* Cambia esto por la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .description {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="description">
+            <h1>Quién Soy</h1>
+            <p>Hola, mi nombre es [Tu Nombre]. Soy [una breve descripción sobre ti, tus intereses o tu profesión].</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+
+/* Reset básico para el margen y el padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración general del cuerpo de la página */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para la imagen de fondo */
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('ruta/de/tu/foto.jpg'); /* Cambia esto por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Caja para la descripción */
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%; /* Limitar el ancho máximo */
+}
+
+/* Estilo para el título */
+.description h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el párrafo */
+.description p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
