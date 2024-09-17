@@ -1,47 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quién Soy</title>
-    <style>
-        /* Estilos para la imagen y el contenedor */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        .background-image {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background-image: url('ruta/de/tu/foto.jpg'); /* Cambia esto por la ruta de tu imagen */
-            background-size: cover;
-            background-position: center;
-        }
-
-        .description {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-    </style>
+    <title>Acerca de</title>
+    <link rel="stylesheet" href="styles/acercade.css">
 </head>
 <body>
-    <div class="background-image">
-        <div class="description">
-            <h1>Quién Soy</h1>
-            <p>Hola, mi nombre es [Tu Nombre]. Soy [una breve descripción sobre ti, tus intereses o tu profesión].</p>
-        </div>
-    </div>
+    <header>
+        <h1>Acerca de Mí</h1>
+    </header>
+    
+    <main>
+        <section class="about-section">
+            <div class="profile-info">
+                <img src="perfil.jpg" alt="Foto de Rafael Urrios" class="profile-photo">
+                <div class="profile-details">
+                    <h2>Rafael Urrios</h2>
+                    <p>Hola, soy Rafael Urrios. Soy un profesional en el área de Inteligencia de Negocios con una sólida experiencia en diversos roles dentro del sector de servicios y educación.</p>
+                </div>
+            </div>
+            
+            <section class="education">
+                <h3>Formación Académica</h3>
+                <p>He dedicado mis estudios a la Inteligencia de Negocios, adquiriendo conocimientos profundos en análisis de datos y estrategias empresariales. He completado varios cursos y certificaciones en Python, SQL, Power BI, y otras herramientas de análisis de datos.</p>
+            </section>
+
+            <section class="experience">
+                <h3>Experiencia Profesional</h3>
+                <ul>
+                    <li><strong>Camarero:</strong> He trabajado en diversos restaurantes, brindando un excelente servicio al cliente y gestionando operaciones diarias.</li>
+                    <li><strong>Gerente de Restaurante:</strong> Como gerente, he supervisado operaciones, coordinado equipos y mejorado la eficiencia operativa.</li>
+                    <li><strong>Profesor Particular:</strong> He impartido clases particulares en matemáticas y ciencias a estudiantes de diferentes niveles.</li>
+                    <li><strong>Barman:</strong> He trabajado en el bar creando cócteles innovadores y asegurando una experiencia agradable para los clientes.</li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h3>Habilidades y Competencias</h3>
+                <p>Tengo habilidades avanzadas en Python, SQL, Power BI, Excel y PowerPoint. Mi experiencia también incluye el manejo de herramientas analíticas y la elaboración de informes detallados.</p>
+            </section>
+
+            <section class="achievements">
+                <h3>Logros y Reconocimientos</h3>
+                <p>He sido reconocido por mi capacidad para mejorar procesos operativos y por mi habilidad para enseñar y motivar a los estudiantes.</p>
+            </section>
+
+            <section class="goals">
+                <h3>Objetivos y Pasiones</h3>
+                <p>Mi objetivo a largo plazo es continuar desarrollando mis habilidades en Inteligencia de Negocios y aplicar estos conocimientos para ayudar a las empresas a tomar decisiones más informadas y estratégicas. Me apasiona el aprendizaje continuo y la tecnología.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rafael Urrios</p>
+    </footer>
 </body>
 </html>
