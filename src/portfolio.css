@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #555;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+nav ul li a:hover {
+    background-color: #666;
+    border-radius: 4px;
+}
+
+/* Sección del portfolio */
+.portfolio-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* Grid para los proyectos */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo de cada proyecto */
+.project-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Efecto de flotación */
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-item h3 {
+    padding: 15px;
+    font-size: 22px;
+    color: #333;
+    margin: 0;
+}
+
+.project-item p {
+    padding: 0 15px 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.btn {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 15px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
