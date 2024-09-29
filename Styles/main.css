@@ -1,126 +1,121 @@
+/* main.css */
+
 /* Estilos generales */
 body {
-    background-color: #f0f4f8; /* Fondo gris claro */
-    color: #444; /* Texto gris oscuro */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color de texto */
 }
 
-/* Estilos para el encabezado */
+/* Estilo para el encabezado */
 header {
-    background-color: #333333; /* Gris oscuro */
-    color: #fff;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #35424a; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+    text-align: center; /* Centrar texto */
 }
 
-h1 {
-    font-size: 32px;
-    margin: 0;
-}
-
-/* Estilos para la navegación */
+/* Estilo para el menú de navegación */
 nav {
-    background-color: #444444; /* Gris un poco más claro que el encabezado */
+    background-color: #444; /* Fondo de navegación */
     padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar texto */
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none; /* Quitar estilo de lista */
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 15px;
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Espaciado entre elementos */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    color: white; /* Color de texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s ease; /* Transición suave para el hover */
 }
 
 nav ul li a:hover {
-    background-color: #555555; /* Gris un poco más claro al pasar el ratón */
+    color: #ddd; /* Color de texto al pasar el ratón */
 }
 
-/* Estilos para el contenido principal */
-main {
-    padding: 30px;
-    background-color: #ffffff; /* Fondo blanco */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Estilo para el contenedor de la imagen y la información */
+.info-container {
+    display: flex; /* Disposición en flexbox */
+    align-items: center; /* Alinear verticalmente */
+    margin: 20px; /* Espaciado alrededor */
+    background-color: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
 }
 
-/* Estilos para la sección de video */
+/* Estilo para la imagen */
+.image-container img {
+    max-width: 100%; /* Hacer que la imagen sea responsiva */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilo para el texto de información */
+.info-text {
+    flex: 1; /* Ocupar espacio igual */
+    margin-left: 20px; /* Espacio a la izquierda */
+}
+
+.info-text h3 {
+    color: #35424a; /* Color de encabezado */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.info-text p {
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Estilo para la sección del video */
 .video-section {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.video-section h2 {
-    font-size: 24px;
-    color: #444444; /* Gris oscuro */
-    margin-bottom: 20px;
+    margin: 20px; /* Espaciado alrededor */
+    text-align: center; /* Centrar el video */
 }
 
 .video-section iframe {
-    width: 100%;
-    max-width: 800px;
-    height: 450px; /* Altura fija para el video */
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Hacer que el video sea responsivo */
+    border-radius: 8px; /* Bordes redondeados para el video */
 }
 
-/* Estilos para el pie de página */
+/* Estilo para el pie de página */
 footer {
-    background-color: #333333; /* Gris oscuro */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    background-color: #35424a; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar texto */
+    padding: 15px; /* Espaciado interno */
+    position: relative; /* Posición relativa */
+    bottom: 0; /* Alinear al fondo */
+    width: 100%; /* Ancho completo */
 }
 
 footer ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none; /* Quitar estilo de lista */
     margin: 0;
+    padding: 0;
 }
 
 footer ul li {
-    display: inline-block;
-    margin: 0 10px;
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Espaciado entre elementos */
 }
 
 footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
+    color: white; /* Color de texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
 }
 
 footer ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Media query para dispositivos móviles */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
+    text-decoration: underline; /* Subrayar al pasar el ratón */
 }

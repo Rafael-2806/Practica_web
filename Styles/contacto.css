@@ -1,0 +1,128 @@
+/* Styles/contacto.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea; /* Color de fondo gris claro */
+}
+
+/* Contenedor de contacto */
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto; /* Mayor margen superior para más espacio */
+    padding: 30px; /* Aumentado el padding para un mejor espaciado */
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados más pronunciados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Estilos del encabezado */
+h1 {
+    color: #35424a; /* Color gris oscuro */
+    text-align: center;
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+label {
+    margin-bottom: 5px;
+    color: #555; /* Color gris medio */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+/* Estilos de inputs y textarea */
+input, textarea {
+    margin-bottom: 20px; /* Mayor margen inferior */
+    padding: 12px; /* Mayor padding */
+    border: 2px solid #cccccc; /* Borde más grueso */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+/* Efecto al enfocar los inputs */
+input:focus, textarea:focus {
+    border-color: #35424a; /* Cambio de color al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+/* Estilos del botón */
+button {
+    padding: 12px;
+    background: #35424a; /* Color de fondo gris oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease; /* Transición suave para el fondo */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+button:hover {
+    background: #444; /* Color al pasar el mouse */
+}
+
+/* Secciones de información de contacto y redes sociales */
+.contact-info, .social-media {
+    margin-top: 30px; /* Mayor espaciado superior */
+}
+
+/* Estilos para subtítulos */
+.contact-info h2, .social-media h2 {
+    color: #35424a;
+    margin-bottom: 10px; /* Espaciado inferior */
+    font-size: 1.8rem; /* Tamaño de fuente más grande */
+    border-bottom: 2px solid #cccccc; /* Línea debajo del título */
+    padding-bottom: 5px; /* Espaciado inferior */
+}
+
+/* Estilos para la lista de redes sociales */
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    justify-content: center; /* Centra los elementos */
+}
+
+.social-media ul li {
+    margin: 10px; /* Margen alrededor de cada cuadro */
+}
+
+/* Estilo de cada cuadro para las redes sociales */
+.social-media a {
+    display: flex; /* Flexbox para centrar el contenido */
+    align-items: center; /* Alineación vertical */
+    justify-content: center; /* Alineación horizontal */
+    width: 150px; /* Ancho fijo para los cuadros */
+    padding: 10px; /* Espaciado interno */
+    background: #35424a; /* Color de fondo gris oscuro */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s ease; /* Transición suave para el fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces de redes sociales */
+.social-media a:hover {
+    background: #444; /* Cambio de color al pasar el mouse */
+}
+
+/* Mensaje de agradecimiento */
+.thanks {
+    text-align: center;
+    margin-top: 30px; /* Mayor margen superior */
+    font-style: italic;
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    color: #666; /* Color gris claro */
+}

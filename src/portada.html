@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portada</title>
-    <link rel="stylesheet" href="portada.css">
+    <link rel="stylesheet" href="../styles/portada.css">
 </head>
 <body>
+    <!-- Contenedor para cargar el nav.html -->
+    <div id="nav-placeholder"></div>
+
     <div class="fondo">
         <div class="contenido">
             <h1>Bienvenido a mi página</h1>
-            <p>Este es un ejemplo de una portada con fondo de imagen.</p>
+            <p> Soy Rafa Urrios y esta es mi web</p>
+            
+            <div class="foto-perfil">
+                <img src="../imagenmia.jpg" alt="Tu nombre" /> <!-- Ruta de tu foto -->
+            </div>
+            <p><a href="acercade.html" class="link-saber-mas">Si quieres saber más sobre mí, pincha aquí</a></p> <!-- Enlace añadido -->
         </div>
     </div>
+
+    <!-- Script para cargar el nav.html dinámicamente -->
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
+
+
